@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wall Hub Privacy Policy</title>
+  <style>
+    body { font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem; color: #1b1f24; }
+    h1 { font-size: 1.8rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+    a { color: #0b57d0; }
+  </style>
+</head>
+<body>
+  <h1>Wall Hub Privacy Policy</h1>
+  <p>Wall Hub is a personal, open-source wall dashboard. It runs entirely on the owner's own device (a Samsung Galaxy Tab S7+ running Termux). There is no Wall Hub server, no account system, and no developer-operated backend.</p>
+
+  <h2>What it accesses, and why</h2>
+  <p>With the owner's explicit consent through Google's OAuth screen, Wall Hub uses these Google scopes:</p>
+  <ul>
+    <li><strong>Google Calendar (read-only):</strong> to show the owner's upcoming events on the dashboard.</li>
+    <li><strong>Google Tasks (read and write):</strong> to show the owner's tasks and to mark them complete or incomplete when tapped.</li>
+    <li><strong>Google Drive (read-only):</strong> to download photos from a folder the owner chooses, for the photo slideshow.</li>
+  </ul>
+  <p>It also sends the owner's configured latitude and longitude to Open-Meteo (open-meteo.com) to fetch the weather forecast.</p>
+
+  <h2>What happens to the data</h2>
+  <ul>
+    <li>Data is fetched directly from Google to the owner's device and is shown on that device only.</li>
+    <li>Calendar, task and photo data is cached in files on the device so the display still works when Wi-Fi is down. It is not copied anywhere else.</li>
+    <li>Access tokens are stored in a file on the device. They are never sent to the developer or any third party.</li>
+    <li>Wall Hub does not sell, share, or transfer Google user data to anyone, does not use it for advertising, and does not use it to train AI models.</li>
+  </ul>
+
+  <h2>Revoking access</h2>
+  <p>The owner can revoke Wall Hub's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and can delete all cached data by deleting the cache folder and token file on the device.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="https://github.com/manoharboorlu">github.com/manoharboorlu</a>.</p>
+</body>
+</html>
